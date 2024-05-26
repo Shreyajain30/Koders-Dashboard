@@ -1,0 +1,121 @@
+
+.custom-table {
+    width: 80%;
+    border-collapse: collapse;
+    border-radius: 100px;
+    margin: 0 auto;
+  }
+  
+  .table-head {
+    background-color: rgb(29, 71, 188);
+    color: white;
+    text-align: left;
+    padding: 1rem;
+  }
+  
+  tr {
+    height: 2.5rem;
+    padding-left: 1rem;
+  }
+  
+  th,
+  td {
+    text-align: start;
+    padding: 0.5rem;
+  }
+  
+  .first-col {
+    padding-right: 2rem;
+    text-align: end;
+    width: 10rem;
+  }
+  
+  .table-body tr:nth-child(odd) {
+    background-color: rgb(234, 237, 241);
+    border: 0.1px solid rgb(216, 213, 213);
+    border-left: none;
+    border-right: none;
+  }
+  
+  .rank {
+    text-align: end;
+    padding-right: 3rem;
+    white-space: pre;
+  }
+  
+  .employee-name {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .custom-table {
+      width: 100%;
+    }
+  
+    .table-head {
+      padding: 0.5rem;
+    }
+  
+    tr {
+      height: auto;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  
+    th,
+    td {
+      display: block;
+      text-align: left;
+      padding: 0.5rem;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    .first-col,
+    .rank {
+      text-align: left;
+      padding-right: 0;
+    }
+  
+    .employee-name {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .custom-table {
+      width: 100%;
+    }
+  
+    .table-head {
+      padding: 0.5rem;
+    }
+  
+    tr {
+      height: auto;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  
+    th,
+    td {
+      display: block;
+      text-align: left;
+      padding: 0.5rem;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    .first-col,
+    .rank {
+      text-align: left;
+      padding-right: 0;
+    }
+  
+    .employee-name {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
